@@ -1,0 +1,9 @@
+.j-item-as-list{
+    display: list-item;
+}
+
+.force-jiraff-item{
+    text-align: center;
+    margin: auto;
+    width: 40vw;
+}

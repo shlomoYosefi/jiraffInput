@@ -1,0 +1,9 @@
+.jiraff-item{
+    padding: 2px;
+    border: 5px solid green;
+    margin: 4px;
+}
+
+.jiraff-item.bossy{
+    background-color: pink;
+}

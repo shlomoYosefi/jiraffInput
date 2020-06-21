@@ -1,0 +1,18 @@
+|<h1>welcome jiraff</h1>
+<div style="display: flex;" [style.background]='bgRnd'>
+    <ul class="force-jiraff-item">
+        <app-jiraff-item
+             *ngFor='let i of jiraffArary'
+             [j]='i'
+             class="j-item-as-list"
+
+             (clickNot)='selectedJ = i'
+             (deleteNot)='deleteJ($event)'
+             (randomColorNot)='bgRnd =$event'
+             
+             
+             ></app-jiraff-item>
+    </ul>
+
+    <app-jiraff-details [j]='selectedJ'></app-jiraff-details>
+</div>
