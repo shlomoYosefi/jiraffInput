@@ -756,7 +756,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (rf & 1) {
         var _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "app-jiraff-item", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "app-jiraff-item", 4);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("clickNot", function JiraffPageComponent_app_jiraff_item_5_Template_app_jiraff_item_clickNot_0_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3);
@@ -853,7 +853,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-jiraff-page"]],
       decls: 7,
       vars: 4,
-      consts: [[1, "force-jiraff-item", 2, "display", "flex"], ["class", "j-item-as-list", 3, "j", "clickNot", "deleteNot", "randomColorNot", 4, "ngFor", "ngForOf"], [3, "j"], [1, "j-item-as-list", 3, "j", "clickNot", "deleteNot", "randomColorNot"]],
+      consts: [[1, "wrapp"], [1, "force-jiraff-item"], ["class", "j-item-as-list", 3, "j", "clickNot", "deleteNot", "randomColorNot", 4, "ngFor", "ngForOf"], [3, "j"], [1, "j-item-as-list", 3, "j", "clickNot", "deleteNot", "randomColorNot"]],
       template: function JiraffPageComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0, "|");
@@ -864,25 +864,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "ul", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "ul", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, JiraffPageComponent_app_jiraff_item_5_Template, 1, 1, "app-jiraff-item", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, JiraffPageComponent_app_jiraff_item_5_Template, 1, 1, "app-jiraff-item", 2);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "app-jiraff-details", 2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "app-jiraff-details", 3);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
 
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("background", ctx.bgRnd, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefaultStyleSanitizer"]);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.jiraffArary);
 
@@ -891,7 +891,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("j", ctx.selectedJ);
         }
       },
-      styles: [".j-item-as-list[_ngcontent-%COMP%]{\r\n    display: list-item;\r\n}\r\n\r\n.force-jiraff-item[_ngcontent-%COMP%]{\r\n    text-align: center;\r\n    margin: auto;\r\n    width: 40vw;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcHMvamlyYWZmLWFkbWluL2ppcmFmZi1wYWdlL2ppcmFmZi1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2NvbXBzL2ppcmFmZi1hZG1pbi9qaXJhZmYtcGFnZS9qaXJhZmYtcGFnZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmotaXRlbS1hcy1saXN0e1xyXG4gICAgZGlzcGxheTogbGlzdC1pdGVtO1xyXG59XHJcblxyXG4uZm9yY2UtamlyYWZmLWl0ZW17XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBtYXJnaW46IGF1dG87XHJcbiAgICB3aWR0aDogNDB2dztcclxufSJdfQ== */"]
+      styles: [".j-item-as-list[_ngcontent-%COMP%]{\r\n    display: list-item;\r\n    \r\n}\r\n\r\n.force-jiraff-item[_ngcontent-%COMP%]{\r\n    text-align: center;\r\n    margin: auto;\r\n    width: 40%;\r\n    \r\n}\r\n\r\n.wrapp[_ngcontent-%COMP%]{\r\n    display: flex;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcHMvamlyYWZmLWFkbWluL2ppcmFmZi1wYWdlL2ppcmFmZi1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7SUFDbEIsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFlBQVk7SUFDWixVQUFVOztBQUVkOztBQUNBO0lBQ0ksYUFBYTtBQUNqQiIsImZpbGUiOiJzcmMvYXBwL2NvbXBzL2ppcmFmZi1hZG1pbi9qaXJhZmYtcGFnZS9qaXJhZmYtcGFnZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmotaXRlbS1hcy1saXN0e1xyXG4gICAgZGlzcGxheTogbGlzdC1pdGVtO1xyXG4gICAgLyogd2lkdGg6IDQwdnc7ICovXHJcbn1cclxuXHJcbi5mb3JjZS1qaXJhZmYtaXRlbXtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIG1hcmdpbjogYXV0bztcclxuICAgIHdpZHRoOiA0MCU7XHJcbiAgICBcclxufVxyXG4ud3JhcHB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG59Il19 */"]
     });
     /*@__PURE__*/
 
