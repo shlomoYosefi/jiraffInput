@@ -1,12 +1,14 @@
 .j-item-as-list{
     display: list-item;
+    /* width: 40vw; */
 }
 
 .force-jiraff-item{
     text-align: center;
     margin: auto;
-    width: 40vw;
+    width: 40%;
+    
 }
-/* .wrapp{
+.wrapp{
     display: flex;
-} */
+}
