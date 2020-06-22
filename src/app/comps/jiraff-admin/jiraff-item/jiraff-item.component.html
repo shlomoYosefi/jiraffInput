@@ -1,6 +1,8 @@
 <div 
     
-    [class]=" 'jiraff-item' +(j.isBossy ? ' bossy':'')" 
+    [class]=" 'jiraff-item' +(j.isBossy ? ' bossy':'')"
+    [style.background]='myColor'
+    [style.border]='myBorder' 
     (click)= 'clickNot.emit()'
     >
     <h3>{{j.name}}</h3>
@@ -8,5 +10,34 @@
 <div>
     <app-jiraff-lable label='height :' [value]='j.height'></app-jiraff-lable>
     <app-jiraff-lable label='color :' [value]='j.color'></app-jiraff-lable>
+
+    <select #selCol (change)="selectColorsFn(selCol.value)" class="selectColors">
+        <option id="0">color</option>
+        <option id="1" value="blue">blue</option>
+        <option id="2" value="red">red</option>
+        <option id="3" value="yellow">yellow</option>
+        <option id="4" value="pink">pink</option>
+        <option id="5" value="black">black</option>
+    </select>
+
+
+    <select #selColAll (change)="selectColorsAllFn(selColAll.value)">
+        <option id="0">colorAll</option>
+        <option id="1" value="blue">blue</option>
+        <option id="2" value="red">red</option>
+        <option id="3" value="yellow">yellow</option>
+        <option id="4" value="pink">pink</option>
+        <option id="5" value="black">black</option>
+    </select>
+
+
     <button (click)='deleteNotFn()'>delete</button>
+
+    <select #selBos (change)="selectBossyFn(selBos.value)" class="selectBossy">
+        <option id="bossy">isBossy</option>
+        <option id="bossy1">true</option>
+        <option id="bossy2">false</option>
+
+    </select>
+
 </div>

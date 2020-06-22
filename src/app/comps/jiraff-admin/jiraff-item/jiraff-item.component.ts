@@ -10,9 +10,14 @@ export class JiraffItemComponent implements OnInit {
 
   @Input() j:jiraff
 
+  myColor:string
+  myBorder:string
+
   @Output()clickNot = new EventEmitter<null>()
   @Output()deleteNot = new EventEmitter<number>()
   @Output()randomColorNot = new EventEmitter<string>()
+  @Output()selectColor = new EventEmitter<string>()
+
 
   constructor() { }
 
@@ -28,6 +33,26 @@ export class JiraffItemComponent implements OnInit {
 
   deleteNotFn(){
     this.deleteNot.emit(this.j.id)
+  }
+
+  selectColorsFn(select){
+    console.log(select);
+    this.myColor = select
+  }
+
+  selectBossyFn(select){
+    console.log(select);
+    if(select =='true'){
+    this.myBorder = '20px solid green'
+    }
+    else{
+      this.myBorder = '5px solid red'
+    } 
+    }
+
+  selectColorsAllFn(select){
+    
+    this.selectColor.emit(select)
   }
 
 }

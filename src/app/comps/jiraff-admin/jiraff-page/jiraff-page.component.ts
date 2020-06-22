@@ -9,7 +9,7 @@ export class JiraffPageComponent implements OnInit {
 
   selectedJ:jiraff
   bgRnd:string
-
+  myColor:string
   constructor() { }
 
   ngOnInit(): void {
@@ -19,6 +19,7 @@ export class JiraffPageComponent implements OnInit {
     for (let i=0; i<this.jiraffArary.length;i++){
       if (this.jiraffArary[i].id == Jid){
         this.jiraffArary.splice(i,1)
+        this.selectedJ = null
       }
     }
   }

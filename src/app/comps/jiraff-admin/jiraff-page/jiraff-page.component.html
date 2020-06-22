@@ -1,14 +1,17 @@
 |<h1>welcome jiraff</h1>
 <div class="wrapp" [style.background]='bgRnd'>
-    <ul class="force-jiraff-item">
+    <ul class="force-jiraff-item" [style.background]='myColor'>
         <app-jiraff-item
              *ngFor='let i of jiraffArary'
              [j]='i'
              class="j-item-as-list"
+             
+
 
              (clickNot)='selectedJ = i'
              (deleteNot)='deleteJ($event)'
              (randomColorNot)='bgRnd =$event'
+             (selectColor)='myColor =$event'
              
              
              ></app-jiraff-item>
